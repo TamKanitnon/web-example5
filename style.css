@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ==================== nav ==================== */
+
+.container {
+    /* border: 1px solid black; */
+    max-width: 1170px;
+    width: 98%;
+    margin: 0 auto;
+}
+.nav {
+    /* border: 1px solid black; */
+    height: 70px;
+    background: #fff;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+nav {
+    /* border: 1px solid black; */
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    /* border: 1px solid black; */
+    margin-left: 30px;
+}
+ul.menu {
+    /* border: 1px solid black; */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+ul.menu li {
+    /* border: 1px solid black; */
+    font-size: 0.9rem;
+    margin-right: 30px;
+    position: relative;
+}
+ul.menu li:nth-child(6):before {
+    border: 1px solid #ccc;
+    content: "";
+    height: 70px;
+    position: absolute;
+    top: -28px;
+    left: -15px;
+}
+ul.menu li a {
+    /* border: 1px solid black; */
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    transition: 0.2s;
+}
+ul.menu li a:hover {
+    color: #e7a848;
+}
+
+/* ==================== header ==================== */
+
+header {
+    /* border: 1px solid black; */
+    background: url("img/header-bg.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 885px;
+    position: relative
+}
+.header-title {
+    /* border: 1px solid black; */
+    width: 680px;
+    height: 715px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    /* margin-left: 30px; */
+    bottom: -140px;
+}
+.header-title p {
+    /* border: 1px solid white; */
+    font-size: 4rem;
+    font-weight: 300;
+}
+.header-title a {
+    /* border: 1px solid white; */
+    color: #fff;
+    font-size: 6rem;
+    position: absolute;
+    left: 5rem;
+    bottom: 4rem;
+}
+
+/* ==================== experience ==================== */
+
+.exp {
+    /* border: 1px solid black; */
+    height: 660px;
+    background: #fff;
+    overflow: hidden;
+}
+.exp_grid {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 2rem;
+    margin-top: 212px;
+    margin-left: 30px;
+}
+.exp_left {
+    /* border: 1px solid black; */
+    width: 445px;
+    height: 375px;
+}
+.exp_left h2 {
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    font-size: 2rem;
+}
+.exp_left p {
+    /* border: 1px solid black; */
+    line-height: 2;
+    margin-top: 2rem;
+}
+.exp_left .readmore {
+    /* border: 1px solid black; */
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+.exp_right img {
+    /* border: 1px solid black; */
+    transition: 0.4s;
+}
+.exp_right img:hover {
+    transform: translate(-20px, -20px);
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* ==================== facts ==================== */
+
+.facts {
+    /* border: 1px solid black; */
+    height: 815px;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+}
+.facts_title {
+    /* border: 1px solid white; */
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 70px;
+}
+.facts_grid {
+    /* border: 1px solid white; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    margin: 7rem 10rem 0 10rem;
+}
+.facts_items {
+    /* border: 1px solid white; */
+    width: 350px;
+    height: 150px;
+}
+.facts_items h3 {
+    /* border: 1px solid white; */
+    font-size: 3rem;
+}
+.facts_items p {
+    /* border: 1px solid white; */
+    color: #ccc;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    line-height: 2;
+}
+.learnmore {
+    /* border: 1px solid white; */
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.learnmore-btn {
+    border: 1px solid white;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    transition: 0.3s;
+}
+.learnmore-btn:hover {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #fff;
+}
+
+/* ==================== whatwedo ==================== */
+
+.whatwedo {
+    /* border: 1px solid black; */
+    height: auto;
+    padding-top: 5rem;
+}
+.whatwedo_title {
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+.whatwedo_items {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    grid-gap: 2rem;
+    margin-bottom: 4rem;
+}
+.whatwedo_items:nth-child(1) .whatwedo_l {
+    /* border: 1px solid black; */
+    padding: 4rem;
+}
+.whatwedo_items:nth-child(1) .whatwedo_l h3 {
+    /* border: 1px solid black; */
+    padding: 1rem;
+    font-size: 2rem;
+}
+.whatwedo_items:nth-child(1) .whatwedo_l  p{
+    /* border: 1px solid black; */
+    padding: 1rem;
+    line-height: 1.5;
+}
+.whatwedo_items:nth-child(2) .whatwedo_r {
+    /* border: 1px solid black; */
+    padding: 4rem;
+}
+.whatwedo_items:nth-child(2) .whatwedo_r h3 {
+    /* border: 1px solid black; */
+    padding: 1rem;
+    font-size: 2rem;
+}
+.whatwedo_items:nth-child(2) .whatwedo_r  p{
+    /* border: 1px solid black; */
+    padding: 1rem;
+    line-height: 1.5;
+}
+.whatwedo_items:nth-child(3) .whatwedo_l {
+    /* border: 1px solid black; */
+    padding: 4rem;
+}
+.whatwedo_items:nth-child(3) .whatwedo_l h3 {
+    /* border: 1px solid black; */
+    padding: 1rem;
+    font-size: 2rem;
+}
+.whatwedo_items:nth-child(3) .whatwedo_l  p{
+    /* border: 1px solid black; */
+    padding: 1rem;
+    line-height: 1.5;
+}
+.whatwedo_items img {
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+/* ==================== whatwedo ==================== */
+
+.testimonial_box {
+    /* border: 1px solid black; */
+    height: 565px;
+    background: #e7a848;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.testimonial_box img {
+    /* border: 1px solid black; */
+    width: 30px;
+}
+.testimonial_box h3 {
+    /* border: 1px solid black; */
+    margin-top: 2rem;
+}
+.testimonial_box p {
+    /* border: 1px solid black; */
+    width: 540px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.client_logo {
+    /* border: 1px solid black; */
+    margin: 4rem 0;
+}
+
+/* ==================== footer ==================== */
+
+footer {
+    /* border: 1px solid black; */
+    height: 442px;
+}
+.footer_top {
+    /* border: 1px solid black; */
+    background: #3b3d3f;
+    height: 322px;
+}
+.footer_top_c {
+    /* border: 1px solid black; */
+    height: 322px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_top_items {
+    /* border: 1px solid black; */
+    color: #fff;
+    font-size: 0.9rem;
+}
+.footer_top_items:nth-child(1) {
+    /* border: 1px solid black; */
+    width: 255px;
+    line-height: 1.5;
+}
+.footer_top_items .fth {
+    /* border: 1px solid black; */
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.footer_top_items ul li {
+    /* border: 1px solid black; */
+    margin-bottom: 1rem;
+}
+.footer_top_items ul li i {
+    /* border: 1px solid black; */
+    color: #e7a848;
+    margin-right: 10px;
+}
+.footer_bottom {
+    /* border: 1px solid black; */
+    height: 120px;
+    background: #282828;
+}
+.footer_bottom_c {
+    /* border: 1px solid black; */
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+}
+.footer_bottom_items ul {
+    /* border: 1px solid white; */
+    display: flex;
+}
+.footer_bottom_items ul li {
+    /* border: 1px solid white; */
+    margin-right: 1.5rem;
+}
+.footer_bottom_items ul a {
+    /* border: 1px solid white; */
+    color: #666;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer_bottom_items ul a:hover {
+    color: #fff;
+}
+
+/* ==================== responsive ==================== */
+
+@media screen and (max-width: 840px) {
+
+    /* ==================== nav ==================== */
+
+    .nav {
+        /* border: 1px solid black; */
+        height: auto;
+    }
+    nav {
+        /* border: 1px solid black; */
+        height: auto;
+        flex-direction: column;
+    }
+    .logo {
+        /* border: 1px solid black; */
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+    ul.menu li {
+        /* border: 1px solid black; */
+        margin: 1rem;
+    }
+    ul.menu li:nth-child(6):before {
+        height: 40px;
+        top: -13px;
+    }
+
+    /* ==================== experience ==================== */
+
+    .exp {
+        /* border: 1px solid black; */
+        height: auto;
+        padding-bottom: 3rem;
+        text-align: center;
+    }
+    .exp_grid {
+        /* border: 1px solid black; */
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    /* ==================== facts ==================== */
+
+    .facts {
+        /* border: 1px solid red; */
+        height: auto;
+        padding-bottom: 3rem;
+    }
+
+    /* ==================== footer ==================== */
+
+    .footer_bottom {
+        /* border: 1px solid red; */
+        height: auto;
+        padding: 3rem 0;
+    }
+    .footer_bottom_c {
+        /* border: 1px solid red; */
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* ==================== nav ==================== */
+
+    ul.menu {
+        /* border: 1px solid red; */
+        margin-top: 1rem;
+        /* height: 0; */
+        /* flex-direction: column; */
+    }
+    ul.menu li:nth-child(6):before {
+        border: none;
+    }
+    .header-title {
+        width: 90%;
+    }
+    .header-title p {
+        /* border: 1px solid red; */
+        font-size: 2.5rem;
+        line-height: 1.5;
+    }
+    .header-title a {
+        /* border: 1px solid red; */
+        left: 3rem;
+    }
+
+    /* ==================== experience ==================== */
+
+    .exp_grid {
+        /* border: 1px solid red; */
+        justify-content: center;
+        margin-left: 0;
+    }
+    .exp_right img {
+        /* border: 1px solid red; */
+        width: 85%;
+    }
+
+    /* ==================== facts ==================== */
+
+    .whatwedo img {
+        /* border: 1px solid red; */
+        width: 90%;
+    }
+    
+
+    /* ==================== facts ==================== */
+
+    .facts_title {
+        /* border: 1px solid red; */
+        font-size: 2rem;
+    }
+    .facts_grid {
+        /* border: 1px solid red; */
+        margin: 4rem;
+    }
+
+    /* ==================== testimonial ==================== */
+
+    .testimonial_box p {
+        /* border: 1px solid red; */
+        width: 300px;
+    }
+
+    /* ==================== footer ==================== */
+
+    .footer_top, .footer_top_c {
+        /* border: 1px solid red; */
+        height: auto;
+    }
+
+    .footer_top, .footer_top_c {
+        /* border: 1px solid red; */
+        text-align: center;
+        flex-direction: column;
+    }
+
+}
